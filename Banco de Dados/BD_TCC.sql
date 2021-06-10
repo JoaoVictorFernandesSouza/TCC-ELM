@@ -1,0 +1,37 @@
+CREATE DATABASE biblioteca;
+USE biblioteca;
+
+CREATE TABLE livro (
+cod_livro INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+titulo VARCHAR(120) NOT NULL,
+img VARCHAR(255) NOT NULL,
+autor VARCHAR(120) NOT NULL,
+descricao VARCHAR(1000) NOT NULL,
+genero VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE aluno (
+rm INT NOT NULL PRIMARY KEY,
+nome VARCHAR(120) NOT NULL,
+email VARCHAR(180) NOT NULL,
+senha VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE locacao (
+cod_locacao INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+rm INT NOT NULL,
+cod_livro INT NOT NULL,
+data_locacao DATE NOT NULL,
+data_devolucao DATE NOT NULL,
+devolvido BOOLEAN NOT NULL,
+KEY fk_rm_aluno (rm),
+KEY fk_cod_livro (cod_livro),
+CONSTRAINT fk_rm_aluno FOREIGN KEY (rm) REFERENCES aluno (rm) ON DELETE CASCADE ON UPDATE CASCADE,
+CONSTRAINT fk_cod_livro FOREIGN KEY (cod_livro) REFERENCES livro (cod_livro) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+    
+    
+    
+
+
