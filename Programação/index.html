@@ -1,59 +1,463 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style-index.css">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Inicio - Teste</title>
 
-  <!-- CSS Bootstrap -->
-  <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/style-index.css">
+   <!-- Links Carrossel -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-  <!-- Icones Font Awesome -->
-  <script src="https://kit.fontawesome.com/8952364c3c.js" crossorigin="anonymous"></script>
+   <!-- Link CSS style-test -->
+   <link rel="stylesheet" href="/style-index.css">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+   <!-- Icones Font Awesome -->
+   <script src="https://kit.fontawesome.com/8952364c3c.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-  <title>index</title>
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <main>
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/imagens/sara-cohen-Skcr6X_aLjU-unsplash.jpg" alt="Biblioteca">
-          <div class="container">
-            <div class="login btn-lg btn-danger">
-              <div class="text-login">
-                <span>Faça seu login</span>
-              </div>
-              <div class="icon-login">
-                <i class="fas fa-user-circle"></i>
-              </div>
+   <main>
+      <div style="padding-right: 0px !important; padding-left: 0px !important;" class="container-fluid">
+         <div class="carousel-inner">
+            <div style="height: 32rem;" class="carousel-item active">
+               <img src="/imagens/sara-cohen-Skcr6X_aLjU-unsplash.jpg" alt="Biblioteca">
+               <div class="container">
+                  <div class="login btn-lg btn-danger">
+                     <div class="text-login">
+                        <span>Faça seu login</span>
+                     </div>
+                     <div class="icon-login">
+                        <i class="fas fa-user-circle"></i>
+                     </div>
+                  </div>
+                  <div class="carousel-caption text-start">
+                     <center>
+                        <h1>ETEC Library Managment</h1>
+                        <p>A sua biblioteca escolar em todos os lugares para todos os momentos</p>
+                     </center>
+                  </div>
+               </div>
             </div>
-            <div class="carousel-caption text-start">
-              <center>
-                <h1>ETEC Library Managment</h1>
-                <p>A sua biblioteca escolar em todos os lugares para todos os momentos</p>
-              </center>
+         </div>
+      </div><!-- /.container -->
+
+      <!-- Caixa de Pesquisa -->
+      <div class="container mt-4">
+         <div class="row d-flex justify-content-center">
+            <div class="col-md-10">
+               <div style="padding-bottom: 5rem !important;" class="card p-4 mt-3">
+                  <h3 class="heading mt-5 text-center">Olá! Pesquise seu livro por aqui</h3>
+                  <div class="d-flex justify-content-center px-5">
+                     <div class="search"> <input type="text" class="search-input" placeholder="Procurando..." name="">
+                        <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div><!-- /.container -->
 
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
-  </main>
+      <!-- Carrossel de livros-Clássicos nacionais (DESKTOP) -->
 
-  <!-- Javascript Bootstrap -->
-  <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="container desktop">
+         <hr class="featurette-divider">
+         <div class="row">
+            <div class="col-md-12">
+               <h2>Literatura Nacional</h2>
+               <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                  <!-- Indicadores do Carrossel - "bolinhas abaixo" -->
+                  <ol class="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <!-- Wrapper for carousel items -->
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/domcasmurro.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>Dom Casmurro</h4>
+                                    <p class="titulo-autor">Machado de Assis</p>
+                                    <p class="titulo-genero">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/ocortico.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>O Cortiço</h4>
+                                    <p class="item-price">Aluísio Azevedo</p>
+                                    <p class="titulo-genero">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/oguarani.webp" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>O Guarani</h4>
+                                    <p class="item-price">José de Alencar</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/memoriaspostumas.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>Memórias Póstumas de Brás Cubas</h4>
+                                    <p class="item-price">Machado De Assis</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/olhaioslirios.webp" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>Olhai os lírios do campo</h4>
+                                    <p class="item-price">Erico Verissimo</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/quarup.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>Quarup</h4>
+                                    <p class="item-price">Antônio  Callado</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/iracema.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>Iracema</h4>
+                                    <p class="item-price">José De Alencar</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/vidassecas.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>Vidas Secas</h4>
+                                    <p class="item-price">Graciliano Ramos</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/escravaisaura.webp" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>A Escrava Isaura</h4>
+                                    <p class="item-price">Bernardo Guimarães</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/autodacompadecida.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>Auto da Compadecida</h4>
+                                    <p class="item-price">Ariano Suassuna</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/pagadordepromessas.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>O Pagador de Promessas</h4>
+                                    <p class="item-price">Dias Gomes</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/oateneu.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>O Ateneu</h4>
+                                    <p class="item-price">Raul Pompeia</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Carousel controls -->
+                  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                     <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                     <i class="fa fa-angle-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div> <!-- /.container -->
+
+      <!-- Carrossel de livros-Clássicos nacionais (CELULAR) -->
+
+      <div class="container celular">
+         <hr class="featurette-divider">
+         <div class="row">
+            <div class="col-md-12">
+               <h2>Clássicos Nacionais</h2>
+               <div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="0">
+                  <!-- Indicadores do Carrossel - "bolinhas abaixo" -->
+                  <ol class="carousel-indicators">
+                     <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                     <li data-target="#myCarousel3" data-slide-to="1"></li>
+                     <li data-target="#myCarousel3" data-slide-to="2"></li>
+                     <li data-target="#myCarousel3" data-slide-to="3"></li>
+                     <li data-target="#myCarousel3" data-slide-to="4"></li>
+                     <li data-target="#myCarousel3" data-slide-to="5"></li>
+                  </ol>
+                  <!-- Wrapper for carousel items -->
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/domcasmurro.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>Dom Casmurro</h4>
+                                    <p class="titulo-autor">Machado de Assis</p>
+                                    <p class="titulo-genero">Clássico</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/ocortico.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>O Cortiço</h4>
+                                    <p class="item-price">Aluísio Azevedo</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/oguarani.webp" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>O Guarani</h4>
+                                    <p class="item-price">José de Alencar</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/quarup.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>Quarup</h4>
+                                    <p class="item-price">Antônio Callado</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/iracema.jpg" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>Iracema</h4>
+                                    <p class="item-price">José de Alencar</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-3">
+                              <div class="thumb-wrapper">
+                                 <div class="img-box">
+                                    <img src="/imagens/Literatura Nacional/escravaisaura.webp" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="thumb-content">
+                                    <h4>A Escrava Isaura</h4>
+                                    <p class="item-price">Bernardo Guimarães</p>
+                                    <p class="item-price">Literatura Nacional</p>
+                                    <div class="star-rating">
+                                       <a href="#" class="btn btn-primary">Saiba mais</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Carousel controls -->
+                  <a class="carousel-control-prev" href="#myCarousel3" data-slide="prev">
+                     <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel3" data-slide="next">
+                     <i class="fa fa-angle-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div> <!-- /.container -->
+      </div>
+      </div>
+      <footer class="container">
+         <hr class="featurette-divider">
+         <p class="float-end"><a href="#">Back to top</a></p>
+         <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+   </main>
+</body>
 
 </html>
