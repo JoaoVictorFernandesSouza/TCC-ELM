@@ -307,6 +307,7 @@ h2::after {
     bottom: -20px;
 }
 
+/* Carrossel de livros */
 .carousel {
     margin: 50px auto;
     padding: 0 70px;
@@ -375,6 +376,8 @@ h2::after {
 .carousel .thumb-content {
     padding: 15px;
 }
+
+
 
 .carousel-control-prev,
 .carousel-control-next {
